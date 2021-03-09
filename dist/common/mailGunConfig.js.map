@@ -1,0 +1,1 @@
+{"version":3,"file":"mailGunConfig.js","sourceRoot":"","sources":["../../src/common/mailGunConfig.ts"],"names":[],"mappings":";;AACA,iCAAiC;AACjC,MAAM,CAAC,MAAM,EAAE,CAAC;AAEhB,SAAgB,OAAO;IACnB,OAAO,EAAE,MAAM,EAAE,OAAO,CAAC,GAAG,CAAC,cAAc,EAAE,OAAO,EAAE,OAAO,CAAC,GAAG,CAAC,eAAe,EAAE,CAAA;AACvF,CAAC;AAFD,0BAEC"}
