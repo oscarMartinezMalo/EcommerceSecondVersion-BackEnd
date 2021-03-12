@@ -9,7 +9,7 @@ export const CartSchema = new mongoose.Schema({
             price: { type: Number },
             category: { type: String },
             imageUrl: { type: String },
-            // images: [ {type: String} ]
+            imagesUrls: [ {type: String} ]
         },
         quantity: { type: Number, default: 0 }
     }]
@@ -32,5 +32,5 @@ interface Product {
     price: number;
     category: string;
     imageUrl: string;
-    // images: string[]
+    imagesUrls: string[]
 }

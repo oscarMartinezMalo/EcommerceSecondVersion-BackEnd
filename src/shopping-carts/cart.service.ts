@@ -29,6 +29,7 @@ export class CartService {
         const query = { $and: [{ _id: cartId }, { 'items.quantity': { $exists: true } }, { 'items.product.id': product.id }] };
 
         let cart = await this.cartModel.findOne(query);
+        // If Cart not exist create new cart
         if (!cart) {
             cart = (await this.cartModel.findOne({ _id: cartId }));
            this.addNotExistItem(cart, cartId, product);

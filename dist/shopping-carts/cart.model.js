@@ -10,6 +10,7 @@ exports.CartSchema = new mongoose.Schema({
                 price: { type: Number },
                 category: { type: String },
                 imageUrl: { type: String },
+                imagesUrls: [{ type: String }]
             },
             quantity: { type: Number, default: 0 }
         }]

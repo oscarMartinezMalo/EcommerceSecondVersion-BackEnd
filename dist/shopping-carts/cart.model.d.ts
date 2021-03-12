@@ -15,5 +15,6 @@ interface Product {
     price: number;
     category: string;
     imageUrl: string;
+    imagesUrls: string[];
 }
 export {};

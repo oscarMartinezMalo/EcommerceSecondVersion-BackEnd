@@ -6,5 +6,6 @@ exports.ProductSchema = new mongoose.Schema({
     price: { type: Number, required: true },
     category: { type: String, required: true },
     imageUrl: { type: String, required: true },
+    imagesUrls: [{ type: String }]
 });
 //# sourceMappingURL=product.model.js.map

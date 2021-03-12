@@ -14,14 +14,33 @@ import { editFileName, imageFileFilter } from "src/common/file-upload.utils";
 export class ProductsController {    
     constructor(private readonly productServicer: ProductService) { }
 
+    // INSERT PRODUCT with Files
+    @UseInterceptors( FilesInterceptor('files', 5, {
+        storage: diskStorage({ 
+            destination: './public',
+            filename: editFileName,
+        }),
+        fileFilter: imageFileFilter,
+    }) )
     @Post()
     @UsePipes(new JoiValidationPipe(ProductValidationSchema))
     @UseGuards(new AuthGuard())
-    async addProduct(@Body() completeBody: Product) {
-        const generatedId = await this.productServicer.insertProduct(completeBody.title, completeBody.price, completeBody.category, completeBody.imageUrl);
+    async addProduct(
+        @Body() completeBody: Product,
+        @UploadedFiles() files: Express.Multer.File[]
+    ) {
+        const generatedId = await this.productServicer.insertProduct(completeBody.title, completeBody.price, completeBody.category , completeBody.imageUrl, files);
         return { id: generatedId };
     }
-
+    
+    // UPDATE PRODUCT with Files
+    @UseInterceptors( FilesInterceptor('files', 5, {
+         storage: diskStorage({
+             destination: './public',
+             filename: editFileName,
+        }),
+        fileFilter: imageFileFilter,
+    }))
     @Patch(':id')
     @UseGuards(new AuthGuard())
     async updateProduct(
@@ -29,11 +48,14 @@ export class ProductsController {
         @Body('title') prodTitle: string,
         @Body('price') prodPrice: number,
         @Body('category') prodCategory: string,
-        @Body('imageUrl') prodImageUrl: string,
+        @Body('imageUrl') imageUrl: string,
+        @Body('imagesUrls') imagesUrls: string[],
+        @UploadedFiles() files: Express.Multer.File[]
     ) {
-        await this.productServicer.updateProduct(prodId, prodTitle, prodPrice, prodCategory, prodImageUrl);
+        await this.productServicer.updateProduct(prodId, prodTitle, prodPrice, prodCategory, imageUrl, imagesUrls , files);
         return null;
     }
+
     @Get()
     async getAllProducts(
     ) {
@@ -52,42 +74,8 @@ export class ProductsController {
         await this.productServicer.deleteProduct(prodId);
         return null;
     }
+    
 
-    
-    // // Form with Files
-    // @UseInterceptors( FilesInterceptor('files', 5, {
-    //     storage: diskStorage({ 
-    //         destination: './public',
-    //         filename: editFileName,
-    //     }),
-    //     fileFilter: imageFileFilter,
-    // }) )
-    // @Post()
-    // @UsePipes(new JoiValidationPipe(ProductValidationSchema))
-    // @UseGuards(new AuthGuard())
-    // async addProduct(
-    //     @Body() completeBody: Product,
-    //     @UploadedFiles() files: Express.Multer.File[]
-    // ) {
-    //     const generatedId = await this.productServicer.insertProduct(completeBody.title, completeBody.price, completeBody.category, /*completeBody.imageUrl,*/ files);
-    //     return { id: generatedId };
-    // }
-    
-    // @UseInterceptors( FilesInterceptor('files', 5, { storage: diskStorage({ destination: './public', filename: editFileName, }),
-    //                                                 fileFilter: imageFileFilter,}))
-    // @Patch(':id')
-    // @UseGuards(new AuthGuard())
-    // async updateProduct(
-    //     @Param('id') prodId: string,
-    //     @Body('title') prodTitle: string,
-    //     @Body('price') prodPrice: number,
-    //     @Body('category') prodCategory: string,
-    //     // @Body('imageUrl') prodImageUrl: string,
-    //     @UploadedFiles() files: Express.Multer.File[]
-    // ) {
-    //     await this.productServicer.updateProduct(prodId, prodTitle, prodPrice, prodCategory,/* prodImageUrl,*/ files);
-    //     return null;
-    // }
     // // End Form with Files
 
     // // Examples how to upload a file

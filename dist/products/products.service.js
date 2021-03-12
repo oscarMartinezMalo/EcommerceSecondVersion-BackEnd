@@ -19,8 +19,11 @@ let ProductService = class ProductService {
     constructor(productModel) {
         this.productModel = productModel;
     }
-    async insertProduct(title, price, category, imageUrl) {
-        const newProduct = new this.productModel({ title, price, category, imageUrl, });
+    async insertProduct(title, price, category, imageUrl, files) {
+        if (files.length <= 0)
+            throw new common_1.BadRequestException('At least one Image is Required');
+        let imagesUrls = files.map(x => { return process.env.LOCAL_URL + x.filename; });
+        const newProduct = new this.productModel({ title, price, category, imageUrl, imagesUrls });
         const result = await newProduct.save();
         return result.id;
     }
@@ -41,10 +44,11 @@ let ProductService = class ProductService {
             title: product.title,
             price: product.price,
             category: product.category,
-            imageUrl: product.imageUrl
+            imageUrl: product.imageUrl,
+            imagesUrls: product.imagesUrls,
         };
     }
-    async updateProduct(id, title, price, category, imageUrl) {
+    async updateProduct(id, title, price, category, imageUrl, imagesUrls, files) {
         const updateProduct = await this.findProduct(id);
         if (title) {
             updateProduct.title = title;

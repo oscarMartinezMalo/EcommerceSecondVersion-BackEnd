@@ -5,7 +5,7 @@ export const ProductSchema = new mongoose.Schema({
     price: { type: Number, required: true },
     category: { type: String, required: true },
     imageUrl: { type: String, required: true },
-    // images: [ {type: String} ]
+    imagesUrls: [ {type: String} ]
 });
 
 export interface Product extends mongoose.Document {
@@ -14,5 +14,5 @@ export interface Product extends mongoose.Document {
     price: number;
     category: string;
     imageUrl: string;
-    // images: string[];
+    imagesUrls: string[];
 }

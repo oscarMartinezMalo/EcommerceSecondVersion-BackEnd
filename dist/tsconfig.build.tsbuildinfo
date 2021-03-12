@@ -1102,8 +1102,8 @@
         "signature": "a6a77971695d21f7d4d0cce1e4da110af66f7cafc746085407413e5fd1021915"
       },
       "../src/products/product.model.ts": {
-        "version": "17156c299e671acd685bdaad520cdeedbc965d23cd4af793866741022438386f",
-        "signature": "b36541b1563b6f33d870c117d5fd00a4e8e8bad603ef906877f0c38e410b326c"
+        "version": "3430950627dbbd76f2bd8e49ebf205ca8bb0601ea37af746f60730c74fc4344d",
+        "signature": "4d2e347a3430f4d20548eec8f4f0e72f8e763c1abf16a271e87fb507c05fe032"
       },
       "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": {
         "version": "d6f8f5677b0e4076ff30fb38cefe5739f3247f4a311081a83aac4a7996b2224b",
@@ -1146,8 +1146,8 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/products/products.service.ts": {
-        "version": "6119b3402a97821de4c75651b07f9e16670751d09f378a317737e8e06f60805b",
-        "signature": "5e6a31cf8c9fc5b4261e018d02d653cfc2776ef761386c5b8f186f5805a78dff"
+        "version": "1d368147f62ea49e2cff5b8ce994dd13bcadfdac08855950e8f9611283ac37cc",
+        "signature": "8026820700029e54b423cad613337ea2bb4287c1ad32a9ae95d2922b4c2ebffd"
       },
       "../src/pipes/joi-validation.pipe.ts": {
         "version": "11306480aea4f4bdc2c913bb9ae408568084325054ba754d2e6276e69f589b99",
@@ -1158,7 +1158,7 @@
         "signature": "ba2a09adea4a585bea36a65fec00769d53bea7f498bee36c4c7f0e8b112e1113"
       },
       "../src/products/product-joi.validation.ts": {
-        "version": "28163a03f24c3587112ee11faab59d0558a820a726abbc90ee06ce75756e6a24",
+        "version": "3b36f1bd2a901ef6d5d0edf1446d4c3c33476669fb86dcf98ee8de8d25add750",
         "signature": "23a758f1762d1b2f3e50d1b4b6a17fda3a4cdd13915a62c4a8acc2123244b806"
       },
       "../src/guards/auth.guard.ts": {
@@ -1274,19 +1274,19 @@
         "signature": "0aab5a5d56db6d9591f2b8c4415d74a5f6a8f8be1d688389ed6f3dbcfa44ec91"
       },
       "../src/products/products.controller.ts": {
-        "version": "623c99dda233eacf2a83a9c6db8cdd310c64811713e09c46c3cc19987b0c314f",
-        "signature": "4baea3c976aefdbdf3f88e87fc630b0a502f67f368e2c5a0c59f1c2c9db8037a"
+        "version": "61b61a0da0da03f394ff78539731524f0bcef2e63eb42c1755552ce5458eb8f2",
+        "signature": "aa2135f1e63e9360d8c9d47da12de749ff05fb65dc6e9330be25a9608bf1ac4a"
       },
       "../src/products/product.module.ts": {
         "version": "57d593979545896d0ff8ea7830c26ad5f6087b95cf4cae22331030d49230ca09",
         "signature": "82a2f6b257aaa7b2380624c3670367aa55a63ac8a0600bfb116fdce0d02add8b"
       },
       "../src/shopping-carts/cart.model.ts": {
-        "version": "de7899e84dc9cf4f03271ce0a5d7b20efca5ad935307dd050f223f01f56ef8e2",
-        "signature": "ac357a49d5b15ca9923b0ee3254d5ff6d9e45ab680a2a26bb9e3eb9de08a9421"
+        "version": "9cf352411660222bc241b86b48b3e90b3f4beb71f7e75f9bd8cca5e2890c0c47",
+        "signature": "beec8ca3a45cde18b60fea836b82260065adf0dc61c0bf1611e9a3009f4a858d"
       },
       "../src/shopping-carts/cart.service.ts": {
-        "version": "1c19cf42de763cab08336462c3bc8f5bbf1724ff4596cca0774853f471320b91",
+        "version": "c3b6af3b4c776ccc80d03508be40ea1ea7ee3916a0ad21c06b63348530eb8377",
         "signature": "b5ac6881102506a361fc7486e7bbda1857d8e561599cb058b3540cd16c719db8"
       },
       "../src/shopping-carts/cart.controller.ts": {
@@ -8839,6 +8839,7 @@
       "../node_modules/@types/bson/index.d.ts",
       "../node_modules/@types/mongodb/index.d.ts",
       "../node_modules/@types/mongoose/index.d.ts",
+      "../src/products/product.model.ts",
       "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
       "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
       "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
@@ -8849,8 +8850,10 @@
       "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
       "../node_modules/@nestjs/mongoose/dist/index.d.ts",
       "../node_modules/@nestjs/mongoose/index.d.ts",
+      "../src/products/products.service.ts",
       "../src/pipes/joi-validation.pipe.ts",
       "../node_modules/@types/hapi__joi/index.d.ts",
+      "../src/products/product-joi.validation.ts",
       "../src/guards/auth.guard.ts",
       "../src/decorators/user.decorator.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -8879,6 +8882,10 @@
       "../node_modules/@types/express/index.d.ts",
       "../node_modules/@types/multer/index.d.ts",
       "../src/common/file-upload.utils.ts",
+      "../src/shopping-carts/cart.model.ts",
+      "../src/shopping-carts/cart.service.ts",
+      "../src/shopping-carts/cart.controller.ts",
+      "../src/shopping-carts/cart.module.ts",
       "../node_modules/@types/bcryptjs/index.d.ts",
       "../src/auth/token.model.ts",
       "../src/auth/user.model.ts",
@@ -8900,6 +8907,9 @@
       "../src/orders/order.model.ts",
       "../src/orders/order.service.ts",
       "../src/common/paypalclient .ts",
+      "../src/orders/paypal-payment.service.ts",
+      "../src/orders/order.controller.ts",
+      "../src/orders/order.module.ts",
       "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/injector/module-token-factory.d.ts",
@@ -8945,6 +8955,8 @@
       "../node_modules/@nestjs/serve-static/dist/serve-static.providers.d.ts",
       "../node_modules/@nestjs/serve-static/dist/index.d.ts",
       "../node_modules/@nestjs/serve-static/index.d.ts",
+      "../src/app.module.ts",
+      "../src/main.ts",
       "../src/middlewares/auth.middleware.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
@@ -8985,20 +8997,8 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/products/product-joi.validation.ts",
-      "../src/products/product.model.ts",
-      "../src/products/products.service.ts",
       "../src/products/products.controller.ts",
-      "../src/products/product.module.ts",
-      "../src/shopping-carts/cart.model.ts",
-      "../src/shopping-carts/cart.service.ts",
-      "../src/shopping-carts/cart.controller.ts",
-      "../src/shopping-carts/cart.module.ts",
-      "../src/orders/paypal-payment.service.ts",
-      "../src/orders/order.controller.ts",
-      "../src/orders/order.module.ts",
-      "../src/app.module.ts",
-      "../src/main.ts"
+      "../src/products/product.module.ts"
     ]
   },
   "version": "3.8.3"

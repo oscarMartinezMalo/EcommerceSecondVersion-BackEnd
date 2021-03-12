@@ -8,12 +8,12 @@ export class ProductService {
 
     constructor(@InjectModel('Product') private readonly productModel: Model<Product>) { }
 
-    async insertProduct(title: string, price: number, category: string, imageUrl: string,/*files:  Express.Multer.File[]*/) {
-        // if(files.length <= 0) throw new BadRequestException('At least one Image is Required');
-        // Convert array of files to array of string path
-        // let images = files.map(x => { return process.env.LOCAL_URL + x.filename; } );  
+    async insertProduct(title: string, price: number, category: string, imageUrl: string, files:  Express.Multer.File[]) {
+        if(files.length <= 0 ) throw new BadRequestException('At least one Image is Required');
+        
+        let imagesUrls = files.map(x => { return process.env.LOCAL_URL + x.filename; } );  // Convert array of files to array of string path
 
-        const newProduct = new this.productModel({ title, price, category, imageUrl,/* images */ });
+        const newProduct = new this.productModel({ title, price, category, imageUrl, imagesUrls });
         const result = await newProduct.save();
         return result.id as string;
     }
@@ -38,12 +38,12 @@ export class ProductService {
             title: product.title,
             price: product.price,
             category: product.category,
-            // images: product.images
-            imageUrl: product.imageUrl
+            imageUrl: product.imageUrl,
+            imagesUrls: product.imagesUrls,
         };
     }
 
-    async updateProduct(id: string, title: string, price: number, category: string, imageUrl: string /*files:  Express.Multer.File[]*/) {
+    async updateProduct(id: string, title: string, price: number, category: string, imageUrl: string, imagesUrls: string[],  files:Express.Multer.File[]) {
         const updateProduct = await this.findProduct(id);
 
         if (title) { updateProduct.title = title; }

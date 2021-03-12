@@ -13,4 +13,7 @@ export const ProductValidationSchema = Joi.object({
     imageUrl: Joi.string()
         .min(6)
         .required()
+        // ,imagesUrls: Joi.array()
+        // .items( Joi.string().min(10))
+        // .required()
 });
