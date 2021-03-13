@@ -26,8 +26,8 @@ export class ProductService {
             title: prod.title,
             price: prod.price,
             category: prod.category,
-            // images: prod.images
-            imageUrl: prod.imageUrl
+            imageUrl: prod.imageUrl,
+            imagesUrls: prod.imagesUrls,
         }));
     }
 
@@ -43,17 +43,21 @@ export class ProductService {
         };
     }
 
-    async updateProduct(id: string, title: string, price: number, category: string, imageUrl: string, imagesUrls: string[],  files:Express.Multer.File[]) {
+    async updateProduct(id: string, title: string, price: number, category: string, imageUrl: string, imagesUrls: string[]=[],  files:Express.Multer.File[]) {
         const updateProduct = await this.findProduct(id);
+
+        // Concat previous Urls with current list of files Urls
+        let imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; } );
+        let CompleteImagesUrls = imagesUrls.concat(imagesUploadedUrl);
 
         if (title) { updateProduct.title = title; }
         if (price) { updateProduct.price = price; }
         if (category) { updateProduct.category = category; }
         if (imageUrl) { updateProduct.imageUrl = imageUrl; }
-        // let images = files.map(x => { return process.env.LOCAL_URL + x.filename; } ); 
-        // if( images ) { updateProduct.images = images }
-
+        if( imagesUrls ) { updateProduct.imagesUrls = CompleteImagesUrls }
         updateProduct.save();
+
+        // Delete the phisycal files that there are not in imagesUrls but they exist in the database
     }
 
     async deleteProduct(id: string) {

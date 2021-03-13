@@ -11,6 +11,7 @@ export declare class ProductService {
         price: number;
         category: string;
         imageUrl: string;
+        imagesUrls: string[];
     }[]>;
     getSingleProduct(id: string): Promise<{
         id: string;

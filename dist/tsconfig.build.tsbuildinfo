@@ -1146,8 +1146,8 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/products/products.service.ts": {
-        "version": "1d368147f62ea49e2cff5b8ce994dd13bcadfdac08855950e8f9611283ac37cc",
-        "signature": "8026820700029e54b423cad613337ea2bb4287c1ad32a9ae95d2922b4c2ebffd"
+        "version": "20289b921fcc7b7da04c33b49fa2fa6c363c4040f249f98abc649cb9f7e55cdd",
+        "signature": "3401d6572d7b6367bfe5d6686372907393e79d0efdaece3eae24657161d5be71"
       },
       "../src/pipes/joi-validation.pipe.ts": {
         "version": "11306480aea4f4bdc2c913bb9ae408568084325054ba754d2e6276e69f589b99",
@@ -1275,7 +1275,7 @@
       },
       "../src/products/products.controller.ts": {
         "version": "61b61a0da0da03f394ff78539731524f0bcef2e63eb42c1755552ce5458eb8f2",
-        "signature": "aa2135f1e63e9360d8c9d47da12de749ff05fb65dc6e9330be25a9608bf1ac4a"
+        "signature": "6ed7f1d62033b62f3ee9a2b9464af2f5396a600395d5c141165749fc7ff1e3de"
       },
       "../src/products/product.module.ts": {
         "version": "57d593979545896d0ff8ea7830c26ad5f6087b95cf4cae22331030d49230ca09",
@@ -8850,7 +8850,6 @@
       "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
       "../node_modules/@nestjs/mongoose/dist/index.d.ts",
       "../node_modules/@nestjs/mongoose/index.d.ts",
-      "../src/products/products.service.ts",
       "../src/pipes/joi-validation.pipe.ts",
       "../node_modules/@types/hapi__joi/index.d.ts",
       "../src/products/product-joi.validation.ts",
@@ -8907,9 +8906,6 @@
       "../src/orders/order.model.ts",
       "../src/orders/order.service.ts",
       "../src/common/paypalclient .ts",
-      "../src/orders/paypal-payment.service.ts",
-      "../src/orders/order.controller.ts",
-      "../src/orders/order.module.ts",
       "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/injector/module-token-factory.d.ts",
@@ -8955,8 +8951,6 @@
       "../node_modules/@nestjs/serve-static/dist/serve-static.providers.d.ts",
       "../node_modules/@nestjs/serve-static/dist/index.d.ts",
       "../node_modules/@nestjs/serve-static/index.d.ts",
-      "../src/app.module.ts",
-      "../src/main.ts",
       "../src/middlewares/auth.middleware.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
@@ -8997,8 +8991,14 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
+      "../src/products/products.service.ts",
       "../src/products/products.controller.ts",
-      "../src/products/product.module.ts"
+      "../src/products/product.module.ts",
+      "../src/orders/paypal-payment.service.ts",
+      "../src/orders/order.controller.ts",
+      "../src/orders/order.module.ts",
+      "../src/app.module.ts",
+      "../src/main.ts"
     ]
   },
   "version": "3.8.3"

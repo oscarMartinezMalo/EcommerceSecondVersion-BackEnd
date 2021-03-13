@@ -14,6 +14,7 @@ export declare class ProductsController {
         price: number;
         category: string;
         imageUrl: string;
+        imagesUrls: string[];
     }[]>;
     getProduct(prodId: string): Promise<{
         id: string;

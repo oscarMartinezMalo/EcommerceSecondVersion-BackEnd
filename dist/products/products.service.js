@@ -34,7 +34,8 @@ let ProductService = class ProductService {
             title: prod.title,
             price: prod.price,
             category: prod.category,
-            imageUrl: prod.imageUrl
+            imageUrl: prod.imageUrl,
+            imagesUrls: prod.imagesUrls,
         }));
     }
     async getSingleProduct(id) {
@@ -48,8 +49,10 @@ let ProductService = class ProductService {
             imagesUrls: product.imagesUrls,
         };
     }
-    async updateProduct(id, title, price, category, imageUrl, imagesUrls, files) {
+    async updateProduct(id, title, price, category, imageUrl, imagesUrls = [], files) {
         const updateProduct = await this.findProduct(id);
+        let imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; });
+        let CompleteImagesUrls = imagesUrls.concat(imagesUploadedUrl);
         if (title) {
             updateProduct.title = title;
         }
@@ -61,6 +64,9 @@ let ProductService = class ProductService {
         }
         if (imageUrl) {
             updateProduct.imageUrl = imageUrl;
+        }
+        if (imagesUrls) {
+            updateProduct.imagesUrls = CompleteImagesUrls;
         }
         updateProduct.save();
     }
