@@ -52,7 +52,7 @@ let ProductService = class ProductService {
     async updateProduct(id, title, price, category, imageUrl, imagesUrls = [], files) {
         const updateProduct = await this.findProduct(id);
         let imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; });
-        let CompleteImagesUrls = imagesUrls.concat(imagesUploadedUrl);
+        let CompleteImagesUrls = imagesUploadedUrl.concat(imagesUrls);
         if (title) {
             updateProduct.title = title;
         }

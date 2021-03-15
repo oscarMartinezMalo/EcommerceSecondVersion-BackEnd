@@ -47,8 +47,8 @@ export class ProductService {
         const updateProduct = await this.findProduct(id);
 
         // Concat previous Urls with current list of files Urls
-        let imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; } );
-        let CompleteImagesUrls = imagesUrls.concat(imagesUploadedUrl);
+        let imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; } );        
+        let CompleteImagesUrls = imagesUploadedUrl.concat(imagesUrls);
 
         if (title) { updateProduct.title = title; }
         if (price) { updateProduct.price = price; }

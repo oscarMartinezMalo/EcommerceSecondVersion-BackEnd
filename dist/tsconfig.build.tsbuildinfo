@@ -1146,7 +1146,7 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/products/products.service.ts": {
-        "version": "20289b921fcc7b7da04c33b49fa2fa6c363c4040f249f98abc649cb9f7e55cdd",
+        "version": "8a37ede8b739e07596514d773fd6c493cbbb54a592e73f57ddf28a9931de017c",
         "signature": "3401d6572d7b6367bfe5d6686372907393e79d0efdaece3eae24657161d5be71"
       },
       "../src/pipes/joi-validation.pipe.ts": {
@@ -8881,6 +8881,8 @@
       "../node_modules/@types/express/index.d.ts",
       "../node_modules/@types/multer/index.d.ts",
       "../src/common/file-upload.utils.ts",
+      "../src/products/products.controller.ts",
+      "../src/products/product.module.ts",
       "../src/shopping-carts/cart.model.ts",
       "../src/shopping-carts/cart.service.ts",
       "../src/shopping-carts/cart.controller.ts",
@@ -8906,6 +8908,9 @@
       "../src/orders/order.model.ts",
       "../src/orders/order.service.ts",
       "../src/common/paypalclient .ts",
+      "../src/orders/paypal-payment.service.ts",
+      "../src/orders/order.controller.ts",
+      "../src/orders/order.module.ts",
       "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/injector/module-token-factory.d.ts",
@@ -8951,6 +8956,8 @@
       "../node_modules/@nestjs/serve-static/dist/serve-static.providers.d.ts",
       "../node_modules/@nestjs/serve-static/dist/index.d.ts",
       "../node_modules/@nestjs/serve-static/index.d.ts",
+      "../src/app.module.ts",
+      "../src/main.ts",
       "../src/middlewares/auth.middleware.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
@@ -8990,15 +8997,7 @@
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
-      "../node_modules/@types/yargs/index.d.ts",
-      "../src/products/products.service.ts",
-      "../src/products/products.controller.ts",
-      "../src/products/product.module.ts",
-      "../src/orders/paypal-payment.service.ts",
-      "../src/orders/order.controller.ts",
-      "../src/orders/order.module.ts",
-      "../src/app.module.ts",
-      "../src/main.ts"
+      "../node_modules/@types/yargs/index.d.ts"
     ]
   },
   "version": "3.8.3"
