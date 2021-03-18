@@ -1146,8 +1146,8 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/products/products.service.ts": {
-        "version": "8a37ede8b739e07596514d773fd6c493cbbb54a592e73f57ddf28a9931de017c",
-        "signature": "3401d6572d7b6367bfe5d6686372907393e79d0efdaece3eae24657161d5be71"
+        "version": "bec2bca2352b6a8f05771c9115e72654a19897e911a99ed694ef46f789036477",
+        "signature": "fd7567722de3988bfa29e55c32437cdd552142f961299671cd674a5c8e3711c6"
       },
       "../src/pipes/joi-validation.pipe.ts": {
         "version": "11306480aea4f4bdc2c913bb9ae408568084325054ba754d2e6276e69f589b99",
@@ -8997,7 +8997,8 @@
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
-      "../node_modules/@types/yargs/index.d.ts"
+      "../node_modules/@types/yargs/index.d.ts",
+      "../src/products/products.service.ts"
     ]
   },
   "version": "3.8.3"

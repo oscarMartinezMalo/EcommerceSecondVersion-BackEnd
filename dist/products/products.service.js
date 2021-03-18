@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const mongoose_1 = require("@nestjs/mongoose");
 const mongoose_2 = require("mongoose");
+const fs = require("fs");
 let ProductService = class ProductService {
     constructor(productModel) {
         this.productModel = productModel;
@@ -22,7 +23,7 @@ let ProductService = class ProductService {
     async insertProduct(title, price, category, imageUrl, files) {
         if (files.length <= 0)
             throw new common_1.BadRequestException('At least one Image is Required');
-        let imagesUrls = files.map(x => { return process.env.LOCAL_URL + x.filename; });
+        const imagesUrls = files.map(x => { return process.env.LOCAL_URL + x.filename; });
         const newProduct = new this.productModel({ title, price, category, imageUrl, imagesUrls });
         const result = await newProduct.save();
         return result.id;
@@ -51,8 +52,9 @@ let ProductService = class ProductService {
     }
     async updateProduct(id, title, price, category, imageUrl, imagesUrls = [], files) {
         const updateProduct = await this.findProduct(id);
-        let imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; });
-        let CompleteImagesUrls = imagesUploadedUrl.concat(imagesUrls);
+        const imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; });
+        const CompleteImagesUrls = imagesUploadedUrl.concat(imagesUrls);
+        const filesToDelete = updateProduct.imagesUrls.filter(x => !!!CompleteImagesUrls.find(ci => ci === x));
         if (title) {
             updateProduct.title = title;
         }
@@ -69,11 +71,28 @@ let ProductService = class ProductService {
             updateProduct.imagesUrls = CompleteImagesUrls;
         }
         updateProduct.save();
+        this.deleteFilesFromDirectory(filesToDelete);
+    }
+    deleteFilesFromDirectory(filesToDelete) {
+        filesToDelete.forEach(fl => {
+            const fileAddress = fl.split('/');
+            const filePath = fileAddress[fileAddress.length - 1];
+            fs.unlink("public/" + filePath, (err) => {
+                if (err)
+                    console.log("failed to delete local image:" + err);
+                else
+                    console.log('successfully deleted local image');
+            });
+        });
     }
     async deleteProduct(id) {
+        const updateProduct = await this.findProduct(id);
         const result = await this.productModel.deleteOne({ _id: id }).exec();
         if (result.n === 0) {
             throw new common_1.NotFoundException('Could not find product');
+        }
+        else {
+            this.deleteFilesFromDirectory(updateProduct.imagesUrls);
         }
     }
     async findProduct(id) {

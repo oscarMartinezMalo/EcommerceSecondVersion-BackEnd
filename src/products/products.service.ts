@@ -2,6 +2,7 @@ import { BadRequestException, Injectable, NotFoundException } from "@nestjs/comm
 import { Product } from "./product.model";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
+import * as fs from 'fs';
 
 @Injectable()
 export class ProductService {
@@ -11,7 +12,7 @@ export class ProductService {
     async insertProduct(title: string, price: number, category: string, imageUrl: string, files:  Express.Multer.File[]) {
         if(files.length <= 0 ) throw new BadRequestException('At least one Image is Required');
         
-        let imagesUrls = files.map(x => { return process.env.LOCAL_URL + x.filename; } );  // Convert array of files to array of string path
+        const imagesUrls = files.map(x => { return process.env.LOCAL_URL + x.filename; } );  // Convert array of files to array of string path
 
         const newProduct = new this.productModel({ title, price, category, imageUrl, imagesUrls });
         const result = await newProduct.save();
@@ -47,23 +48,44 @@ export class ProductService {
         const updateProduct = await this.findProduct(id);
 
         // Concat previous Urls with current list of files Urls
-        let imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; } );        
-        let CompleteImagesUrls = imagesUploadedUrl.concat(imagesUrls);
+        const imagesUploadedUrl = files.map(x => { return process.env.LOCAL_URL + x.filename; } );        
+        const CompleteImagesUrls = imagesUploadedUrl.concat(imagesUrls);
+
+        // Get the Files url that were deleted
+        const filesToDelete = updateProduct.imagesUrls.filter(x => !!!CompleteImagesUrls.find(ci => ci === x));      
 
         if (title) { updateProduct.title = title; }
         if (price) { updateProduct.price = price; }
         if (category) { updateProduct.category = category; }
         if (imageUrl) { updateProduct.imageUrl = imageUrl; }
         if( imagesUrls ) { updateProduct.imagesUrls = CompleteImagesUrls }
-        updateProduct.save();
+        updateProduct.save();        
 
-        // Delete the phisycal files that there are not in imagesUrls but they exist in the database
+        this.deleteFilesFromDirectory(filesToDelete);
+    }
+
+    // Delete the phisycal files that there are not in imagesUrls but they exist in the database
+    deleteFilesFromDirectory(filesToDelete: string[]){
+        filesToDelete.forEach(fl => {
+            const fileAddress = fl.split('/');
+            const filePath = fileAddress[fileAddress.length - 1];
+            fs.unlink("public/" + filePath, (err) => {
+                if (err) console.log("failed to delete local image:" + err);
+                else console.log('successfully deleted local image');
+            })
+        })
     }
 
     async deleteProduct(id: string) {
+        // First get the files from Public directory to delete them after the record was erase
+        const updateProduct = await this.findProduct(id);
+
+        // Delete the complete record from the dataBase
         const result = await this.productModel.deleteOne({ _id: id }).exec();
         if (result.n === 0) {
             throw new NotFoundException('Could not find product');
+        }else{
+            this.deleteFilesFromDirectory(updateProduct.imagesUrls);
         }
     }
 
