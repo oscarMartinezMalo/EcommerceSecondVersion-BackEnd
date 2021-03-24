@@ -1270,7 +1270,7 @@
         "signature": "45db8351a5c289dffc40d01ce829f21f25ea7a1831eaafd74f915aa42d5d8353"
       },
       "../src/common/file-upload.utils.ts": {
-        "version": "19131582fa244c845200f22c4cf83d3a127952a0bd974b28dba13c745469ed53",
+        "version": "232e0fc20b97da3568ffddde2806c26326c9f887222f0d5f4e55d6119ca998cb",
         "signature": "0aab5a5d56db6d9591f2b8c4415d74a5f6a8f8be1d688389ed6f3dbcfa44ec91"
       },
       "../src/products/products.controller.ts": {
@@ -8850,6 +8850,7 @@
       "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
       "../node_modules/@nestjs/mongoose/dist/index.d.ts",
       "../node_modules/@nestjs/mongoose/index.d.ts",
+      "../src/products/products.service.ts",
       "../src/pipes/joi-validation.pipe.ts",
       "../node_modules/@types/hapi__joi/index.d.ts",
       "../src/products/product-joi.validation.ts",
@@ -8880,7 +8881,6 @@
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
       "../node_modules/@types/multer/index.d.ts",
-      "../src/common/file-upload.utils.ts",
       "../src/products/products.controller.ts",
       "../src/products/product.module.ts",
       "../src/shopping-carts/cart.model.ts",
@@ -8998,7 +8998,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/products/products.service.ts"
+      "../src/common/file-upload.utils.ts"
     ]
   },
   "version": "3.8.3"
