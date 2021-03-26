@@ -57,7 +57,7 @@ let OrderController = class OrderController {
 };
 __decorate([
     common_1.Post(),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
@@ -65,7 +65,7 @@ __decorate([
 ], OrderController.prototype, "addOrder", null);
 __decorate([
     common_1.Post('paypal-order'),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
@@ -73,7 +73,7 @@ __decorate([
 ], OrderController.prototype, "getPaypalOrder", null);
 __decorate([
     common_1.Get('execute-order/:orderId'),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     __param(0, common_1.Param('orderId')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
@@ -81,7 +81,7 @@ __decorate([
 ], OrderController.prototype, "executeOrder", null);
 __decorate([
     common_1.Get('by-user'),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     __param(0, user_decorator_1.User()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
@@ -89,14 +89,14 @@ __decorate([
 ], OrderController.prototype, "getMyOders", null);
 __decorate([
     common_1.Get(),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], OrderController.prototype, "getAllOrders", null);
 __decorate([
     common_1.Get('/by-order-id/:orderId'),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     __param(0, common_1.Param('orderId')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),

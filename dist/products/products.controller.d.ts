@@ -8,6 +8,7 @@ export declare class ProductsController {
         id: string;
     }>;
     updateProduct(prodId: string, prodTitle: string, prodPrice: number, prodCategory: string, imageUrl: string, imagesUrls: string[], files: Express.Multer.File[]): Promise<any>;
+    removeProduct(prodId: string): Promise<any>;
     getAllProducts(): Promise<{
         id: string;
         title: string;
@@ -24,5 +25,4 @@ export declare class ProductsController {
         imageUrl: string;
         imagesUrls: string[];
     }>;
-    removeProduct(prodId: string): Promise<any>;
 }

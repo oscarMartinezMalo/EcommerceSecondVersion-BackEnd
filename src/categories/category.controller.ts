@@ -32,7 +32,7 @@ export class CategoryController {
     }
 
     @Delete(':id')
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     async removeCategory(@Param('id') categoryId: string) {
         await this.categoryService.deleteCategory(categoryId);
         return null;

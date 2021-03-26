@@ -14,7 +14,7 @@ export class OrderController {
         private paypalService: PaypalPaymentService) { }
 
     @Post()
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     async addOrder(
         @Body() completeBody: Order
     ) {  
@@ -32,7 +32,7 @@ export class OrderController {
     }
 
     @Post('paypal-order')
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     async getPaypalOrder(
         @Body() completeBody: Order
     ) {
@@ -41,28 +41,28 @@ export class OrderController {
     }
 
     @Get('execute-order/:orderId')
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     async executeOrder(@Param('orderId') orderId: string) {
         console.log(orderId);
         this.paypalService.captureOrder(orderId);
     }
 
     @Get('by-user')
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     async getMyOders(@User() user: { id: string, email: string }){      // @Param('userId') userId: string,) {
         const myOders = await this.orderService.getMyOrders(user.id);
         return myOders;
     }
 
     @Get()
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     async getAllOrders() {
         const myOders = await this.orderService.getAllOrders();
         return myOders;
     }
 
     @Get('/by-order-id/:orderId')
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     async getOrderById(@Param('orderId') orderId: string) {
         const orderDetails = await this.orderService.getOrderById(orderId);
         return orderDetails;

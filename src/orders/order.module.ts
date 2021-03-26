@@ -7,9 +7,10 @@ import { ProductModule } from "src/products/product.module";
 
 // import { AuthMiddleware } from "src/middlewares/auth.middleware";
 import { PaypalPaymentService } from './paypal-payment.service';
+import { UserSchema } from "src/auth/user.model";
 
 @Module({
-    imports: [MongooseModule.forFeature([{ name: 'Order', schema: OrderSchema }]),
+    imports: [MongooseModule.forFeature([{ name: 'Order', schema: OrderSchema }, { name: 'User', schema: UserSchema }]),
         ProductModule],
     controllers: [OrderController],
     providers: [OrderService, PaypalPaymentService],

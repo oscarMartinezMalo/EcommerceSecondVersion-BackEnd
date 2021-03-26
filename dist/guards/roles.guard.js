@@ -13,19 +13,22 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const jwt = require("jsonwebtoken");
+const core_1 = require("@nestjs/core");
 const mongoose_1 = require("@nestjs/mongoose");
-const user_model_1 = require("../auth/user.model");
+const jwt = require("jsonwebtoken");
 const mongoose_2 = require("mongoose");
-let AuthGuard = class AuthGuard {
-    constructor(userModel) {
+const user_model_1 = require("../auth/user.model");
+let RolesGuard = class RolesGuard {
+    constructor(reflector, userModel) {
+        this.reflector = reflector;
         this.userModel = userModel;
     }
-    canActivate(context) {
-        const request = context.switchToHttp().getRequest();
-        return this.validateRequest(request);
-    }
-    async validateRequest(req) {
+    async canActivate(context) {
+        const roles = this.reflector.get('roles', context.getHandler());
+        if (!roles) {
+            return true;
+        }
+        const req = context.switchToHttp().getRequest();
         const token = req.headers['auth-token'].split(' ')[1];
         if (!token) {
             return false;
@@ -36,6 +39,8 @@ let AuthGuard = class AuthGuard {
             if (!userStored) {
                 throw new common_1.ForbiddenException('User no exits');
             }
+            if (!this.matchRoles(roles, userStored.role))
+                return false;
             req.user = jwtUser;
         }
         catch (error) {
@@ -43,11 +48,15 @@ let AuthGuard = class AuthGuard {
         }
         return true;
     }
+    matchRoles(allowedRoles, userRole) {
+        return allowedRoles.includes(userRole);
+    }
 };
-AuthGuard = __decorate([
+RolesGuard = __decorate([
     common_1.Injectable(),
-    __param(0, mongoose_1.InjectModel('User')),
-    __metadata("design:paramtypes", [mongoose_2.Model])
-], AuthGuard);
-exports.AuthGuard = AuthGuard;
-//# sourceMappingURL=auth.guard.js.map
+    __param(1, mongoose_1.InjectModel('User')),
+    __metadata("design:paramtypes", [core_1.Reflector,
+        mongoose_2.Model])
+], RolesGuard);
+exports.RolesGuard = RolesGuard;
+//# sourceMappingURL=roles.guard.js.map

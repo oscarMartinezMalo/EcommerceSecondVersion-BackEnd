@@ -9,6 +9,8 @@ import { FileInterceptor, FilesInterceptor, MulterModule } from '@nestjs/platfor
 import { diskStorage } from "multer";
 import { array } from "@hapi/joi";
 import { editFileName, imageFileFilter } from "src/common/file-upload.utils";
+import { hasRoles } from "src/guards/roles.decorator";
+import { RolesGuard } from "src/guards/roles.guard";
 
 @Controller('products')
 export class ProductsController {    
@@ -24,7 +26,8 @@ export class ProductsController {
     }) )
     @Post()
     @UsePipes(new JoiValidationPipe(ProductValidationSchema))
-    @UseGuards(new AuthGuard())
+    @hasRoles('Admin')
+    @UseGuards(RolesGuard)
     async addProduct(
         @Body() completeBody: Product,
         @UploadedFiles() files: Express.Multer.File[]
@@ -42,7 +45,8 @@ export class ProductsController {
         fileFilter: imageFileFilter,
     }))
     @Patch(':id')
-    @UseGuards(new AuthGuard())
+    @hasRoles('Admin')
+    @UseGuards(RolesGuard)
     async updateProduct(
         @Param('id') prodId: string,
         @Body('title') prodTitle: string,
@@ -53,6 +57,14 @@ export class ProductsController {
         @UploadedFiles() files: Express.Multer.File[]
     ) {
         await this.productServicer.updateProduct(prodId, prodTitle, prodPrice, prodCategory, imageUrl, imagesUrls , files);
+        return null;
+    }
+
+    @Delete(':id')
+    @hasRoles('Admin')
+    @UseGuards(RolesGuard)
+    async removeProduct(@Param('id') prodId: string) {
+        await this.productServicer.deleteProduct(prodId);
         return null;
     }
 
@@ -67,14 +79,6 @@ export class ProductsController {
     getProduct(@Param('id') prodId: string) {
         return this.productServicer.getSingleProduct(prodId);
     }
-
-    @Delete(':id')
-    @UseGuards(new AuthGuard())
-    async removeProduct(@Param('id') prodId: string) {
-        await this.productServicer.deleteProduct(prodId);
-        return null;
-    }
-    
 
     // // End Form with Files
 

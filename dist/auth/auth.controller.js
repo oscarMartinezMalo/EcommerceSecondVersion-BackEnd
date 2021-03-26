@@ -57,7 +57,7 @@ let AuthController = class AuthController {
 };
 __decorate([
     common_1.Get(),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     __param(0, user_decorator_1.User()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
@@ -81,7 +81,7 @@ __decorate([
 ], AuthController.prototype, "logIn", null);
 __decorate([
     common_1.Put('resetPassword'),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     common_1.UsePipes(new joi_validation_pipe_1.JoiValidationPipe(auth_joi_validation_1.refreshPasswordValidationSchema)),
     __param(0, common_1.Body()),
     __param(1, user_decorator_1.User()),

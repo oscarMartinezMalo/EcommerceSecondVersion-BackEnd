@@ -68,7 +68,7 @@ __decorate([
 ], CategoryController.prototype, "updateCategory", null);
 __decorate([
     common_1.Delete(':id'),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    common_1.UseGuards(auth_guard_1.AuthGuard),
     __param(0, common_1.Param('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),

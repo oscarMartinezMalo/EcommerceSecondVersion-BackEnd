@@ -13,7 +13,7 @@ export class AuthController {
 
     // Return the User After passes the Guard 
     @Get()
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     getCredentials(@User() user: { id: string, email: string, role: string }) {
         // Instance of this you should get the current User from the dataBase
         return { id: user.id, email: user.email, role: user.role };
@@ -34,7 +34,7 @@ export class AuthController {
     }
 
     @Put('resetPassword')
-    @UseGuards(new AuthGuard())
+    @UseGuards(AuthGuard)
     @UsePipes(new JoiValidationPipe(refreshPasswordValidationSchema))
     async resetPassword(@Body() completeBody: { currentPassword: string, newPassword: string },
                         @User() user: { id: string, email: string }) {

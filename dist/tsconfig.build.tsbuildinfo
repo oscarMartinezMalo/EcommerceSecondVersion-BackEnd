@@ -1161,9 +1161,13 @@
         "version": "3b36f1bd2a901ef6d5d0edf1446d4c3c33476669fb86dcf98ee8de8d25add750",
         "signature": "23a758f1762d1b2f3e50d1b4b6a17fda3a4cdd13915a62c4a8acc2123244b806"
       },
+      "../src/auth/user.model.ts": {
+        "version": "603c97a33b14e61c2c1061964f3aa73c9c134a5dceb4d8d7ba64e11c3ea75fab",
+        "signature": "fa017593ea0c462733db01f9f36b9123ca740515f8e3b7f5c1a748b592fc0354"
+      },
       "../src/guards/auth.guard.ts": {
-        "version": "d4aa1d8e7a2747eef07290cad9f9d25163af7aff201df8256ffc6e5ebc57f709",
-        "signature": "4391ae8885d16c173ea480926a35786656ef36f39e8e5a0c580f76f7053ae231"
+        "version": "ba8e671a3e81bff329312115949bec46dd257edabcb9e5d839f5e2b2f581cf0d",
+        "signature": "0bcfb7817f9a13c3669b848d3ad71b8e46afe755527c8b0a3b77c5608f7a3dc3"
       },
       "../src/decorators/user.decorator.ts": {
         "version": "ed83a238ad51eb814048862d22e4583193c39a890b08986d5b1bd402762fffd4",
@@ -1273,129 +1277,9 @@
         "version": "232e0fc20b97da3568ffddde2806c26326c9f887222f0d5f4e55d6119ca998cb",
         "signature": "0aab5a5d56db6d9591f2b8c4415d74a5f6a8f8be1d688389ed6f3dbcfa44ec91"
       },
-      "../src/products/products.controller.ts": {
-        "version": "61b61a0da0da03f394ff78539731524f0bcef2e63eb42c1755552ce5458eb8f2",
-        "signature": "6ed7f1d62033b62f3ee9a2b9464af2f5396a600395d5c141165749fc7ff1e3de"
-      },
-      "../src/products/product.module.ts": {
-        "version": "57d593979545896d0ff8ea7830c26ad5f6087b95cf4cae22331030d49230ca09",
-        "signature": "82a2f6b257aaa7b2380624c3670367aa55a63ac8a0600bfb116fdce0d02add8b"
-      },
-      "../src/shopping-carts/cart.model.ts": {
-        "version": "9cf352411660222bc241b86b48b3e90b3f4beb71f7e75f9bd8cca5e2890c0c47",
-        "signature": "beec8ca3a45cde18b60fea836b82260065adf0dc61c0bf1611e9a3009f4a858d"
-      },
-      "../src/shopping-carts/cart.service.ts": {
-        "version": "c3b6af3b4c776ccc80d03508be40ea1ea7ee3916a0ad21c06b63348530eb8377",
-        "signature": "b5ac6881102506a361fc7486e7bbda1857d8e561599cb058b3540cd16c719db8"
-      },
-      "../src/shopping-carts/cart.controller.ts": {
-        "version": "512b9ca65699fa851899a7595c2fa89d471934271e6363b28d9ed178be5de729",
-        "signature": "3e3927112fae6ee18be45eb833f94bb28723254042e23f23552ddb550c94d57a"
-      },
-      "../src/shopping-carts/cart.module.ts": {
-        "version": "b37c6a893ea2d4b99ff6e366e3c6272f8bc7936d32b5e89bce451c93a7107931",
-        "signature": "5ff89a35bedb909ce482b0ffd13ad1fd0f940c87f272043883565870ef2bf3c9"
-      },
-      "../node_modules/@types/bcryptjs/index.d.ts": {
-        "version": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f",
-        "signature": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f"
-      },
-      "../src/auth/token.model.ts": {
-        "version": "fcd6625045db36d55ef00d07d00f765bafe113977081ec72f1c190341f5e70c1",
-        "signature": "0eff3732a18db2ee18099dc994701f337b8531e9b2b9ca96043328c302af5e68"
-      },
-      "../src/auth/user.model.ts": {
-        "version": "603c97a33b14e61c2c1061964f3aa73c9c134a5dceb4d8d7ba64e11c3ea75fab",
-        "signature": "fa017593ea0c462733db01f9f36b9123ca740515f8e3b7f5c1a748b592fc0354"
-      },
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts": {
-        "version": "81f7c978b6de0ad181b619e257ec6e5ac1d1122f67d9cd083ce2a63fb4e99a7b",
-        "signature": "81f7c978b6de0ad181b619e257ec6e5ac1d1122f67d9cd083ce2a63fb4e99a7b"
-      },
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts": {
-        "version": "b36c1a720d848167b97f07f4e0e6e169dff4ca81fc46cc8619974cfd9ce6166a",
-        "signature": "b36c1a720d848167b97f07f4e0e6e169dff4ca81fc46cc8619974cfd9ce6166a"
-      },
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts": {
-        "version": "8ca7282485ee79267ee9bc1bd3ba059e889b18aa94f88abb42d26c3728842bc4",
-        "signature": "8ca7282485ee79267ee9bc1bd3ba059e889b18aa94f88abb42d26c3728842bc4"
-      },
-      "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts": {
-        "version": "89727ebd7c5ae34d112994e48e620f111997088a9de74f14f02d10024dd36297",
-        "signature": "89727ebd7c5ae34d112994e48e620f111997088a9de74f14f02d10024dd36297"
-      },
-      "../src/auth/email.model.ts": {
-        "version": "1b8edff56e80f7285492c64df343a034856357c54d8974fcd3b96aef5d59ef47",
-        "signature": "b3e0cb14e57e108e45c8486d573c599223049a3e0111f10133a98af97bd77237"
-      },
-      "../src/auth/auth.service.ts": {
-        "version": "813c6bb8f6dc54438ecd65658b57b16a30120d43a7fd48c927d39354d75169cc",
-        "signature": "326ddc2bc48ff926154ab4d2c4a81af0ceb24325ad28960b276163b0f45290ee"
-      },
-      "../src/auth/auth-joi.validation.ts": {
-        "version": "07fedc78394dbfda4f66baa504ea1f12418d2d0f791337463ef2a37b88a35aef",
-        "signature": "1d50ea2244fe5dadc9618c7fdb82ca7c1b560e44e12c4794a7fd84ed43ba08f3"
-      },
-      "../src/auth/auth.controller.ts": {
-        "version": "c754ce07e54a83949b9d8bd7185946e3e1dc12009b27a616cf1860549f9a2539",
-        "signature": "1988bdd5a393ea2d3f68deffa38ce3c596891b470409e053e771d7d24c0fccf1"
-      },
-      "../node_modules/dotenv/types/index.d.ts": {
-        "version": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528",
-        "signature": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528"
-      },
-      "../src/common/mailgunconfig.ts": {
-        "version": "07a0fc1ac1dbd5a956375f7e4aca1ca28eaedd99978a12af80f10f6a6edd1219",
-        "signature": "9d94f4ad74ebb6dda37ef6b0494ec8b4865676ecb3e0bcc0661eff744ecae94a"
-      },
-      "../src/auth/auth.module.ts": {
-        "version": "56a07e712608b6e5663f78e4a46d9c35c96149d53f9ea7f0f7b716539670fe0c",
-        "signature": "2e5d258cf85349b02b015c3f1b8873c152d182c3819a7ccc3aff16fc3037a5fc"
-      },
-      "../src/categories/category.model.ts": {
-        "version": "b1aefe7f527f983995a330877e5956fdfe0b75b019569e593ad828296e13a6bc",
-        "signature": "dd548082866a4c85c8d6b930e152c2c57326b7d6d29b466db3f382c3a78d163f"
-      },
-      "../src/categories/category.service.ts": {
-        "version": "a0fbf68e71578773cf6f4964c9c0ae080b2fa7caafd23e0c46cd8be8ae87f604",
-        "signature": "84850fdadcadc6385a92a16ab6bb2e6e366ba0d53c749e19e60ad17d6d454fa8"
-      },
-      "../src/categories/category.controller.ts": {
-        "version": "96fb56fd69f1668ecfe615bbee8164234fa77071ab9d97d7005d703bf231c9e7",
-        "signature": "1c52e04640c9d1df051a5934481c53af4a1263546407ede0a3af48426dba0a60"
-      },
-      "../src/categories/category.module.ts": {
-        "version": "238d37407f596653810ee047abc93cf353ea7bb5679dc3764bb5cf9276c96566",
-        "signature": "1c7e5b4bfafd7feb46a5d617dc37e772cb29488191df74bfcb875daec9b89759"
-      },
-      "../src/orders/order.model.ts": {
-        "version": "12f556ed711ef73d013404c92acd7e8155463ad808c3236de388c0d5c2c7ad32",
-        "signature": "0d125105c0ca0ed853471412c82bfd3251101832d009bc79accca5074d70f321"
-      },
-      "../src/orders/order.service.ts": {
-        "version": "a7bc78004bd4d5439828a1b61ecd47115c4a405fbe803e61b047c4f0b590d6f8",
-        "signature": "d971fa9d23152c8dc51b63f568896ecd3d3f55c7c564d5f461a740d139af9992"
-      },
-      "../src/common/paypalclient .ts": {
-        "version": "5ee9a6bd8400886089bd68317b6cd47f82f643db362a6665d7def2d32482a42c",
-        "signature": "c5dbf5775dbdaa970781884c59f5156e1a8133af08d8b69be6176f35df52fef9"
-      },
-      "../src/orders/paypal-payment.service.ts": {
-        "version": "555fd79ead3d87e09af38c7f320914c01a0458b24a4dd67c1f28fd1abdcefe91",
-        "signature": "8551ae51b42412b92774b4668df3ed06367948bae0a23cb18a18cf94c1211fdb"
-      },
-      "../src/orders/order.controller.ts": {
-        "version": "35b6cc080ad5da4a717c56bf2a130e23cce57a371402b49f21f530a54a3d21ed",
-        "signature": "6db6350bcecf4856f0211c44562e5f092752eb3051c3cab2c142c290c08d6663"
-      },
-      "../src/orders/order.module.ts": {
-        "version": "5b6b8850d3dd7048f5df3c850dd3a2902635dee936fcc9e856030449508b9117",
-        "signature": "a994fec04e63533d1ead259bf2ed3e10e60030f994e5c8a150915ec592407463"
-      },
-      "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts": {
-        "version": "c857b5f94427f9d663a4d92e2f792c7b6363e41b41c5ebd32d231f01550b386d",
-        "signature": "c857b5f94427f9d663a4d92e2f792c7b6363e41b41c5ebd32d231f01550b386d"
+      "../src/guards/roles.decorator.ts": {
+        "version": "3f7495a6c9458374a8b0d066efd622cde93c6ed801c98e47b73a08c043332d24",
+        "signature": "b1854b9c7b3b156198dd760632e8c30910016b84f4d1061ee0246c2d63bd7b1d"
       },
       "../node_modules/@nestjs/core/adapters/index.d.ts": {
         "version": "8b0b6a4c032a56d5651f7dd02ba3f05fbfe4131c4095093633cda3cae0991972",
@@ -1536,6 +1420,130 @@
       "../node_modules/@nestjs/core/index.d.ts": {
         "version": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d",
         "signature": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d"
+      },
+      "../src/guards/roles.guard.ts": {
+        "version": "0d787b4cb92a3de84d2cdab586c749caf8c6f5d780730a97fd36a1b9bb646c03",
+        "signature": "4b00274e38212237e868b812fce02b00a080b98aa99717c33600b6b50477d918"
+      },
+      "../src/products/products.controller.ts": {
+        "version": "662bba0a7f65ea5554d77878b59741b1d7170de8cfa89f5601ababbc20ac8c5a",
+        "signature": "74fac29c1b369839c1ea621060f67b8334a2cb44f4bf7aed0411591e0944d12d"
+      },
+      "../src/products/product.module.ts": {
+        "version": "736b9644e1c02f5da78756e2292c284d7e03bd9068ca8c00cd27fc0506520a2e",
+        "signature": "82a2f6b257aaa7b2380624c3670367aa55a63ac8a0600bfb116fdce0d02add8b"
+      },
+      "../src/shopping-carts/cart.model.ts": {
+        "version": "9cf352411660222bc241b86b48b3e90b3f4beb71f7e75f9bd8cca5e2890c0c47",
+        "signature": "beec8ca3a45cde18b60fea836b82260065adf0dc61c0bf1611e9a3009f4a858d"
+      },
+      "../src/shopping-carts/cart.service.ts": {
+        "version": "c3b6af3b4c776ccc80d03508be40ea1ea7ee3916a0ad21c06b63348530eb8377",
+        "signature": "b5ac6881102506a361fc7486e7bbda1857d8e561599cb058b3540cd16c719db8"
+      },
+      "../src/shopping-carts/cart.controller.ts": {
+        "version": "512b9ca65699fa851899a7595c2fa89d471934271e6363b28d9ed178be5de729",
+        "signature": "3e3927112fae6ee18be45eb833f94bb28723254042e23f23552ddb550c94d57a"
+      },
+      "../src/shopping-carts/cart.module.ts": {
+        "version": "b37c6a893ea2d4b99ff6e366e3c6272f8bc7936d32b5e89bce451c93a7107931",
+        "signature": "5ff89a35bedb909ce482b0ffd13ad1fd0f940c87f272043883565870ef2bf3c9"
+      },
+      "../node_modules/@types/bcryptjs/index.d.ts": {
+        "version": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f",
+        "signature": "9dfe431ab1485e17a6055e186c49da9d23af74b965f2e99f8acc6c958778608f"
+      },
+      "../src/auth/token.model.ts": {
+        "version": "fcd6625045db36d55ef00d07d00f765bafe113977081ec72f1c190341f5e70c1",
+        "signature": "0eff3732a18db2ee18099dc994701f337b8531e9b2b9ca96043328c302af5e68"
+      },
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts": {
+        "version": "81f7c978b6de0ad181b619e257ec6e5ac1d1122f67d9cd083ce2a63fb4e99a7b",
+        "signature": "81f7c978b6de0ad181b619e257ec6e5ac1d1122f67d9cd083ce2a63fb4e99a7b"
+      },
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts": {
+        "version": "b36c1a720d848167b97f07f4e0e6e169dff4ca81fc46cc8619974cfd9ce6166a",
+        "signature": "b36c1a720d848167b97f07f4e0e6e169dff4ca81fc46cc8619974cfd9ce6166a"
+      },
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts": {
+        "version": "8ca7282485ee79267ee9bc1bd3ba059e889b18aa94f88abb42d26c3728842bc4",
+        "signature": "8ca7282485ee79267ee9bc1bd3ba059e889b18aa94f88abb42d26c3728842bc4"
+      },
+      "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts": {
+        "version": "89727ebd7c5ae34d112994e48e620f111997088a9de74f14f02d10024dd36297",
+        "signature": "89727ebd7c5ae34d112994e48e620f111997088a9de74f14f02d10024dd36297"
+      },
+      "../src/auth/email.model.ts": {
+        "version": "1b8edff56e80f7285492c64df343a034856357c54d8974fcd3b96aef5d59ef47",
+        "signature": "b3e0cb14e57e108e45c8486d573c599223049a3e0111f10133a98af97bd77237"
+      },
+      "../src/auth/auth.service.ts": {
+        "version": "813c6bb8f6dc54438ecd65658b57b16a30120d43a7fd48c927d39354d75169cc",
+        "signature": "326ddc2bc48ff926154ab4d2c4a81af0ceb24325ad28960b276163b0f45290ee"
+      },
+      "../src/auth/auth-joi.validation.ts": {
+        "version": "07fedc78394dbfda4f66baa504ea1f12418d2d0f791337463ef2a37b88a35aef",
+        "signature": "1d50ea2244fe5dadc9618c7fdb82ca7c1b560e44e12c4794a7fd84ed43ba08f3"
+      },
+      "../src/auth/auth.controller.ts": {
+        "version": "c259e916071030d3e13e0f9799eca9f79630129a2029959a2006e947ccfeb926",
+        "signature": "1988bdd5a393ea2d3f68deffa38ce3c596891b470409e053e771d7d24c0fccf1"
+      },
+      "../node_modules/dotenv/types/index.d.ts": {
+        "version": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528",
+        "signature": "c9ae0b351a07b52f29a28e869d8c7c8d29743bbb5eeddc7c0b5b2a69a2450528"
+      },
+      "../src/common/mailgunconfig.ts": {
+        "version": "07a0fc1ac1dbd5a956375f7e4aca1ca28eaedd99978a12af80f10f6a6edd1219",
+        "signature": "9d94f4ad74ebb6dda37ef6b0494ec8b4865676ecb3e0bcc0661eff744ecae94a"
+      },
+      "../src/auth/auth.module.ts": {
+        "version": "56a07e712608b6e5663f78e4a46d9c35c96149d53f9ea7f0f7b716539670fe0c",
+        "signature": "2e5d258cf85349b02b015c3f1b8873c152d182c3819a7ccc3aff16fc3037a5fc"
+      },
+      "../src/categories/category.model.ts": {
+        "version": "b1aefe7f527f983995a330877e5956fdfe0b75b019569e593ad828296e13a6bc",
+        "signature": "dd548082866a4c85c8d6b930e152c2c57326b7d6d29b466db3f382c3a78d163f"
+      },
+      "../src/categories/category.service.ts": {
+        "version": "a0fbf68e71578773cf6f4964c9c0ae080b2fa7caafd23e0c46cd8be8ae87f604",
+        "signature": "84850fdadcadc6385a92a16ab6bb2e6e366ba0d53c749e19e60ad17d6d454fa8"
+      },
+      "../src/categories/category.controller.ts": {
+        "version": "6bccb2fa095e5531d50a189782e9861af812254cd7329650f4bcc8b956d90c62",
+        "signature": "1c52e04640c9d1df051a5934481c53af4a1263546407ede0a3af48426dba0a60"
+      },
+      "../src/categories/category.module.ts": {
+        "version": "9d85fa38e1ac9d4123cb7e19721b58e455b2ba01562f66af910312732a2bbd45",
+        "signature": "1c7e5b4bfafd7feb46a5d617dc37e772cb29488191df74bfcb875daec9b89759"
+      },
+      "../src/orders/order.model.ts": {
+        "version": "12f556ed711ef73d013404c92acd7e8155463ad808c3236de388c0d5c2c7ad32",
+        "signature": "0d125105c0ca0ed853471412c82bfd3251101832d009bc79accca5074d70f321"
+      },
+      "../src/orders/order.service.ts": {
+        "version": "a7bc78004bd4d5439828a1b61ecd47115c4a405fbe803e61b047c4f0b590d6f8",
+        "signature": "d971fa9d23152c8dc51b63f568896ecd3d3f55c7c564d5f461a740d139af9992"
+      },
+      "../src/common/paypalclient .ts": {
+        "version": "5ee9a6bd8400886089bd68317b6cd47f82f643db362a6665d7def2d32482a42c",
+        "signature": "c5dbf5775dbdaa970781884c59f5156e1a8133af08d8b69be6176f35df52fef9"
+      },
+      "../src/orders/paypal-payment.service.ts": {
+        "version": "555fd79ead3d87e09af38c7f320914c01a0458b24a4dd67c1f28fd1abdcefe91",
+        "signature": "8551ae51b42412b92774b4668df3ed06367948bae0a23cb18a18cf94c1211fdb"
+      },
+      "../src/orders/order.controller.ts": {
+        "version": "06989a7fceab2506af2e534eda65d2092138e37bcaa6e5185309a76dd9536f73",
+        "signature": "6db6350bcecf4856f0211c44562e5f092752eb3051c3cab2c142c290c08d6663"
+      },
+      "../src/orders/order.module.ts": {
+        "version": "e83d250a34d2a62b9e32223fcf998f520e8342251293f716a37e3615f814f8e9",
+        "signature": "a994fec04e63533d1ead259bf2ed3e10e60030f994e5c8a150915ec592407463"
+      },
+      "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts": {
+        "version": "c857b5f94427f9d663a4d92e2f792c7b6363e41b41c5ebd32d231f01550b386d",
+        "signature": "c857b5f94427f9d663a4d92e2f792c7b6363e41b41c5ebd32d231f01550b386d"
       },
       "../node_modules/@nestjs/serve-static/dist/loaders/abstract.loader.d.ts": {
         "version": "4b9c93a83255d603fa4d857aac95257462cde204c7266b552650a18e700c1d46",
@@ -4063,9 +4071,19 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/auth/user.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/guards/auth.guard.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/rxjs/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/auth/user.model.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -4289,295 +4307,8 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/products/products.controller.ts": [
+      "../src/guards/roles.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/products/products.service.ts",
-        "../src/pipes/joi-validation.pipe.ts",
-        "../src/products/product-joi.validation.ts",
-        "../src/guards/auth.guard.ts",
-        "../src/decorators/user.decorator.ts",
-        "../src/products/product.model.ts",
-        "../node_modules/@nestjs/platform-express/index.d.ts",
-        "../node_modules/@types/multer/index.d.ts",
-        "../node_modules/@types/hapi__joi/index.d.ts",
-        "../src/common/file-upload.utils.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/products/product.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/products/products.controller.ts",
-        "../src/products/products.service.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/products/product.model.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/shopping-carts/cart.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/shopping-carts/cart.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/shopping-carts/cart.model.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../src/products/product.model.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/shopping-carts/cart.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/shopping-carts/cart.service.ts",
-        "../src/products/product.model.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/shopping-carts/cart.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/shopping-carts/cart.controller.ts",
-        "../src/shopping-carts/cart.service.ts",
-        "../src/shopping-carts/cart.model.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@types/bcryptjs/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/token.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/user.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts": [
-        "../node_modules/@nestjs/common/interfaces/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts": [
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts": [
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/email.model.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/auth.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/bcryptjs/index.d.ts",
-        "../src/auth/token.model.ts",
-        "../src/auth/user.model.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts",
-        "../src/auth/email.model.ts",
-        "../node_modules/@types/node/console.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/auth-joi.validation.ts": [
-        "../node_modules/@types/hapi__joi/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/auth.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/auth/auth.service.ts",
-        "../src/auth/auth-joi.validation.ts",
-        "../src/pipes/joi-validation.pipe.ts",
-        "../src/decorators/user.decorator.ts",
-        "../src/guards/auth.guard.ts",
-        "../node_modules/@types/hapi__joi/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/dotenv/types/index.d.ts": [
-        "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/common/mailgunconfig.ts": [
-        "../node_modules/dotenv/types/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/auth.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/auth/auth.controller.ts",
-        "../src/auth/auth.service.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/auth/user.model.ts",
-        "../src/auth/token.model.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts",
-        "../src/common/mailgunconfig.ts",
-        "../node_modules/dotenv/types/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/categories/category.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/categories/category.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/categories/category.model.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/categories/category.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/categories/category.service.ts",
-        "../src/guards/auth.guard.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/categories/category.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/categories/category.controller.ts",
-        "../src/categories/category.service.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/categories/category.model.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/orders/order.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/orders/order.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../src/orders/order.model.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/common/paypalclient .ts": [
-        "../node_modules/dotenv/types/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/orders/paypal-payment.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/orders/order.model.ts",
-        "../src/products/products.service.ts",
-        "../src/common/paypalclient .ts",
-        "../src/orders/order.service.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/orders/order.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/orders/order.service.ts",
-        "../src/guards/auth.guard.ts",
-        "../src/decorators/user.decorator.ts",
-        "../src/orders/order.model.ts",
-        "../src/products/products.service.ts",
-        "../src/orders/paypal-payment.service.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/orders/order.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/orders/order.model.ts",
-        "../node_modules/@nestjs/mongoose/index.d.ts",
-        "../src/orders/order.controller.ts",
-        "../src/orders/order.service.ts",
-        "../src/products/product.module.ts",
-        "../src/orders/paypal-payment.service.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/common/interfaces/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -4884,6 +4615,309 @@
         "../node_modules/@nestjs/core/nest-factory.d.ts",
         "../node_modules/@nestjs/core/router/index.d.ts",
         "../node_modules/@nestjs/core/services/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/guards/roles.guard.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/auth/user.model.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/products/products.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/products/products.service.ts",
+        "../src/pipes/joi-validation.pipe.ts",
+        "../src/products/product-joi.validation.ts",
+        "../src/guards/auth.guard.ts",
+        "../src/decorators/user.decorator.ts",
+        "../src/products/product.model.ts",
+        "../node_modules/@nestjs/platform-express/index.d.ts",
+        "../node_modules/@types/multer/index.d.ts",
+        "../node_modules/@types/hapi__joi/index.d.ts",
+        "../src/common/file-upload.utils.ts",
+        "../src/guards/roles.decorator.ts",
+        "../src/guards/roles.guard.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/products/product.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/products/products.controller.ts",
+        "../src/products/products.service.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/products/product.model.ts",
+        "../src/auth/user.model.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/shopping-carts/cart.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/shopping-carts/cart.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/shopping-carts/cart.model.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/products/product.model.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/shopping-carts/cart.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/shopping-carts/cart.service.ts",
+        "../src/products/product.model.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/shopping-carts/cart.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/shopping-carts/cart.controller.ts",
+        "../src/shopping-carts/cart.service.ts",
+        "../src/shopping-carts/cart.model.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/bcryptjs/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/token.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts": [
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts": [
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/email.model.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/bcryptjs/index.d.ts",
+        "../src/auth/token.model.ts",
+        "../src/auth/user.model.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts",
+        "../src/auth/email.model.ts",
+        "../node_modules/@types/node/console.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth-joi.validation.ts": [
+        "../node_modules/@types/hapi__joi/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/auth.service.ts",
+        "../src/auth/auth-joi.validation.ts",
+        "../src/pipes/joi-validation.pipe.ts",
+        "../src/decorators/user.decorator.ts",
+        "../src/guards/auth.guard.ts",
+        "../node_modules/@types/hapi__joi/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/dotenv/types/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/common/mailgunconfig.ts": [
+        "../node_modules/dotenv/types/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/auth.controller.ts",
+        "../src/auth/auth.service.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/auth/user.model.ts",
+        "../src/auth/token.model.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts",
+        "../src/common/mailgunconfig.ts",
+        "../node_modules/dotenv/types/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/categories/category.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/categories/category.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/categories/category.model.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/categories/category.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/categories/category.service.ts",
+        "../src/guards/auth.guard.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/categories/category.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/categories/category.controller.ts",
+        "../src/categories/category.service.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/categories/category.model.ts",
+        "../src/auth/user.model.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/orders/order.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/orders/order.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/orders/order.model.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/common/paypalclient .ts": [
+        "../node_modules/dotenv/types/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/orders/paypal-payment.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/orders/order.model.ts",
+        "../src/products/products.service.ts",
+        "../src/common/paypalclient .ts",
+        "../src/orders/order.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/orders/order.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/orders/order.service.ts",
+        "../src/guards/auth.guard.ts",
+        "../src/decorators/user.decorator.ts",
+        "../src/orders/order.model.ts",
+        "../src/products/products.service.ts",
+        "../src/orders/paypal-payment.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/orders/order.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/orders/order.model.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/orders/order.controller.ts",
+        "../src/orders/order.service.ts",
+        "../src/products/product.module.ts",
+        "../src/orders/paypal-payment.service.ts",
+        "../src/auth/user.model.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -7560,7 +7594,12 @@
       "../src/products/product-joi.validation.ts": [
         "../node_modules/@types/hapi__joi/index.d.ts"
       ],
+      "../src/auth/user.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
       "../src/guards/auth.guard.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/auth/user.model.ts",
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/rxjs/index.d.ts"
       ],
@@ -7768,132 +7807,8 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/products/products.controller.ts": [
-        "../src/products/products.service.ts",
-        "../src/products/product.model.ts"
-      ],
-      "../src/products/product.module.ts": [
+      "../src/guards/roles.decorator.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
-      ],
-      "../src/shopping-carts/cart.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts"
-      ],
-      "../src/shopping-carts/cart.service.ts": [
-        "../src/shopping-carts/cart.model.ts",
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../src/products/product.model.ts"
-      ],
-      "../src/shopping-carts/cart.controller.ts": [
-        "../src/shopping-carts/cart.service.ts",
-        "../src/products/product.model.ts",
-        "../src/shopping-carts/cart.model.ts"
-      ],
-      "../src/shopping-carts/cart.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
-      ],
-      "../node_modules/@types/bcryptjs/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/token.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts"
-      ],
-      "../src/auth/user.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts"
-      ],
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts": [
-        "../node_modules/@nestjs/common/interfaces/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts": [
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts": [
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/auth/auth.service.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../src/auth/user.model.ts",
-        "../src/auth/token.model.ts",
-        "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts"
-      ],
-      "../src/auth/auth-joi.validation.ts": [
-        "../node_modules/@types/hapi__joi/index.d.ts"
-      ],
-      "../src/auth/auth.controller.ts": [
-        "../src/auth/auth.service.ts"
-      ],
-      "../node_modules/dotenv/types/index.d.ts": [
-        "../node_modules/@types/node/ts3.2/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/categories/category.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts"
-      ],
-      "../src/categories/category.service.ts": [
-        "../src/categories/category.model.ts",
-        "../node_modules/@types/mongoose/index.d.ts"
-      ],
-      "../src/categories/category.controller.ts": [
-        "../src/categories/category.service.ts"
-      ],
-      "../src/categories/category.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
-      ],
-      "../src/orders/order.model.ts": [
-        "../node_modules/@types/mongoose/index.d.ts"
-      ],
-      "../src/orders/order.service.ts": [
-        "../node_modules/@types/mongoose/index.d.ts",
-        "../src/orders/order.model.ts"
-      ],
-      "../src/orders/paypal-payment.service.ts": [
-        "../src/products/products.service.ts",
-        "../src/orders/order.model.ts"
-      ],
-      "../src/orders/order.controller.ts": [
-        "../src/orders/order.service.ts",
-        "../src/products/products.service.ts",
-        "../src/orders/paypal-payment.service.ts",
-        "../src/orders/order.model.ts"
-      ],
-      "../src/orders/order.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
-      ],
-      "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/common/interfaces/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@nestjs/core/adapters/index.d.ts": [
         "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -8196,6 +8111,136 @@
         "../node_modules/@nestjs/core/nest-factory.d.ts",
         "../node_modules/@nestjs/core/router/index.d.ts",
         "../node_modules/@nestjs/core/services/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/guards/roles.guard.ts": [
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/auth/user.model.ts",
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/products/products.controller.ts": [
+        "../src/products/products.service.ts",
+        "../src/products/product.model.ts"
+      ],
+      "../src/products/product.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/shopping-carts/cart.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/shopping-carts/cart.service.ts": [
+        "../src/shopping-carts/cart.model.ts",
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/products/product.model.ts"
+      ],
+      "../src/shopping-carts/cart.controller.ts": [
+        "../src/shopping-carts/cart.service.ts",
+        "../src/products/product.model.ts",
+        "../src/shopping-carts/cart.model.ts"
+      ],
+      "../src/shopping-carts/cart.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../node_modules/@types/bcryptjs/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/token.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts": [
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts": [
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth.service.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/auth/user.model.ts",
+        "../src/auth/token.model.ts",
+        "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts"
+      ],
+      "../src/auth/auth-joi.validation.ts": [
+        "../node_modules/@types/hapi__joi/index.d.ts"
+      ],
+      "../src/auth/auth.controller.ts": [
+        "../src/auth/auth.service.ts"
+      ],
+      "../node_modules/dotenv/types/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/categories/category.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/categories/category.service.ts": [
+        "../src/categories/category.model.ts",
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/categories/category.controller.ts": [
+        "../src/categories/category.service.ts"
+      ],
+      "../src/categories/category.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/orders/order.model.ts": [
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/orders/order.service.ts": [
+        "../node_modules/@types/mongoose/index.d.ts",
+        "../src/orders/order.model.ts"
+      ],
+      "../src/orders/paypal-payment.service.ts": [
+        "../src/products/products.service.ts",
+        "../src/orders/order.model.ts"
+      ],
+      "../src/orders/order.controller.ts": [
+        "../src/orders/order.service.ts",
+        "../src/products/products.service.ts",
+        "../src/orders/paypal-payment.service.ts",
+        "../src/orders/order.model.ts"
+      ],
+      "../src/orders/order.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -8854,6 +8899,7 @@
       "../src/pipes/joi-validation.pipe.ts",
       "../node_modules/@types/hapi__joi/index.d.ts",
       "../src/products/product-joi.validation.ts",
+      "../src/auth/user.model.ts",
       "../src/guards/auth.guard.ts",
       "../src/decorators/user.decorator.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -8881,37 +8927,8 @@
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
       "../node_modules/@types/multer/index.d.ts",
-      "../src/products/products.controller.ts",
-      "../src/products/product.module.ts",
-      "../src/shopping-carts/cart.model.ts",
-      "../src/shopping-carts/cart.service.ts",
-      "../src/shopping-carts/cart.controller.ts",
-      "../src/shopping-carts/cart.module.ts",
-      "../node_modules/@types/bcryptjs/index.d.ts",
-      "../src/auth/token.model.ts",
-      "../src/auth/user.model.ts",
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
-      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts",
-      "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts",
-      "../src/auth/email.model.ts",
-      "../src/auth/auth.service.ts",
-      "../src/auth/auth-joi.validation.ts",
-      "../src/auth/auth.controller.ts",
-      "../node_modules/dotenv/types/index.d.ts",
-      "../src/common/mailgunconfig.ts",
-      "../src/auth/auth.module.ts",
-      "../src/categories/category.model.ts",
-      "../src/categories/category.service.ts",
-      "../src/categories/category.controller.ts",
-      "../src/categories/category.module.ts",
-      "../src/orders/order.model.ts",
-      "../src/orders/order.service.ts",
-      "../src/common/paypalclient .ts",
-      "../src/orders/paypal-payment.service.ts",
-      "../src/orders/order.controller.ts",
-      "../src/orders/order.module.ts",
-      "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts",
+      "../src/common/file-upload.utils.ts",
+      "../src/guards/roles.decorator.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/injector/module-token-factory.d.ts",
       "../node_modules/@nestjs/core/injector/modules-container.d.ts",
@@ -8947,6 +8964,33 @@
       "../node_modules/@nestjs/core/services/reflector.service.d.ts",
       "../node_modules/@nestjs/core/services/index.d.ts",
       "../node_modules/@nestjs/core/index.d.ts",
+      "../src/guards/roles.guard.ts",
+      "../src/products/products.controller.ts",
+      "../src/products/product.module.ts",
+      "../src/shopping-carts/cart.model.ts",
+      "../src/shopping-carts/cart.service.ts",
+      "../src/shopping-carts/cart.controller.ts",
+      "../src/shopping-carts/cart.module.ts",
+      "../node_modules/@types/bcryptjs/index.d.ts",
+      "../src/auth/token.model.ts",
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/configuration.d.ts",
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/services/relay/mailgun.service.d.ts",
+      "../node_modules/@nextnm/nestjs-mailgun/dist/nestjs-mailgun/mailgun.module.d.ts",
+      "../node_modules/@nextnm/nestjs-mailgun/dist/index.d.ts",
+      "../src/auth/email.model.ts",
+      "../src/auth/auth.service.ts",
+      "../src/auth/auth-joi.validation.ts",
+      "../src/auth/auth.controller.ts",
+      "../node_modules/dotenv/types/index.d.ts",
+      "../src/common/mailgunconfig.ts",
+      "../src/auth/auth.module.ts",
+      "../src/categories/category.model.ts",
+      "../src/categories/category.service.ts",
+      "../src/orders/order.model.ts",
+      "../src/orders/order.service.ts",
+      "../src/common/paypalclient .ts",
+      "../src/orders/paypal-payment.service.ts",
+      "../node_modules/@nestjs/serve-static/dist/interfaces/serve-static-options.interface.d.ts",
       "../node_modules/@nestjs/serve-static/dist/loaders/abstract.loader.d.ts",
       "../node_modules/@nestjs/serve-static/dist/loaders/express.loader.d.ts",
       "../node_modules/@nestjs/serve-static/dist/loaders/fastify.loader.d.ts",
@@ -8997,8 +9041,7 @@
       "../node_modules/@types/webpack-sources/index.d.ts",
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
-      "../node_modules/@types/yargs/index.d.ts",
-      "../src/common/file-upload.utils.ts"
+      "../node_modules/@types/yargs/index.d.ts"
     ]
   },
   "version": "3.8.3"

@@ -3,9 +3,10 @@ import { CategoryController } from "./category.controller";
 import { CategoryService } from "./category.service";
 import { MongooseModule } from '@nestjs/mongoose';
 import { CategorySchema } from "./category.model";
+import { UserSchema } from "src/auth/user.model";
 
 @Module({
-    imports: [MongooseModule.forFeature([{ name: 'category', schema: CategorySchema }])],
+    imports: [MongooseModule.forFeature([{ name: 'category', schema: CategorySchema },  { name: 'User', schema: UserSchema }])],
     controllers: [CategoryController],
     providers: [CategoryService]
 })

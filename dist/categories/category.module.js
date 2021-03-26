@@ -11,13 +11,14 @@ const category_controller_1 = require("./category.controller");
 const category_service_1 = require("./category.service");
 const mongoose_1 = require("@nestjs/mongoose");
 const category_model_1 = require("./category.model");
+const user_model_1 = require("../auth/user.model");
 let CategoryModule = class CategoryModule {
     configure(consumer) {
     }
 };
 CategoryModule = __decorate([
     common_1.Module({
-        imports: [mongoose_1.MongooseModule.forFeature([{ name: 'category', schema: category_model_1.CategorySchema }])],
+        imports: [mongoose_1.MongooseModule.forFeature([{ name: 'category', schema: category_model_1.CategorySchema }, { name: 'User', schema: user_model_1.UserSchema }])],
         controllers: [category_controller_1.CategoryController],
         providers: [category_service_1.CategoryService]
     })

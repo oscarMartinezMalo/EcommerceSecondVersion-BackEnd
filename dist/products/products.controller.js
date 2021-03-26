@@ -21,6 +21,8 @@ const user_decorator_1 = require("../decorators/user.decorator");
 const platform_express_1 = require("@nestjs/platform-express");
 const multer_1 = require("multer");
 const file_upload_utils_1 = require("../common/file-upload.utils");
+const roles_decorator_1 = require("../guards/roles.decorator");
+const roles_guard_1 = require("../guards/roles.guard");
 let ProductsController = class ProductsController {
     constructor(productServicer) {
         this.productServicer = productServicer;
@@ -33,16 +35,16 @@ let ProductsController = class ProductsController {
         await this.productServicer.updateProduct(prodId, prodTitle, prodPrice, prodCategory, imageUrl, imagesUrls, files);
         return null;
     }
+    async removeProduct(prodId) {
+        await this.productServicer.deleteProduct(prodId);
+        return null;
+    }
     async getAllProducts() {
         const products = await this.productServicer.getProducts();
         return products;
     }
     getProduct(prodId) {
         return this.productServicer.getSingleProduct(prodId);
-    }
-    async removeProduct(prodId) {
-        await this.productServicer.deleteProduct(prodId);
-        return null;
     }
 };
 __decorate([
@@ -55,7 +57,8 @@ __decorate([
     })),
     common_1.Post(),
     common_1.UsePipes(new joi_validation_pipe_1.JoiValidationPipe(product_joi_validation_1.ProductValidationSchema)),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    roles_decorator_1.hasRoles('Admin'),
+    common_1.UseGuards(roles_guard_1.RolesGuard),
     __param(0, common_1.Body()),
     __param(1, common_1.UploadedFiles()),
     __metadata("design:type", Function),
@@ -71,7 +74,8 @@ __decorate([
         fileFilter: file_upload_utils_1.imageFileFilter,
     })),
     common_1.Patch(':id'),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
+    roles_decorator_1.hasRoles('Admin'),
+    common_1.UseGuards(roles_guard_1.RolesGuard),
     __param(0, common_1.Param('id')),
     __param(1, common_1.Body('title')),
     __param(2, common_1.Body('price')),
@@ -83,6 +87,15 @@ __decorate([
     __metadata("design:paramtypes", [String, String, Number, String, String, Array, Array]),
     __metadata("design:returntype", Promise)
 ], ProductsController.prototype, "updateProduct", null);
+__decorate([
+    common_1.Delete(':id'),
+    roles_decorator_1.hasRoles('Admin'),
+    common_1.UseGuards(roles_guard_1.RolesGuard),
+    __param(0, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", Promise)
+], ProductsController.prototype, "removeProduct", null);
 __decorate([
     common_1.Get(),
     __metadata("design:type", Function),
@@ -96,14 +109,6 @@ __decorate([
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", void 0)
 ], ProductsController.prototype, "getProduct", null);
-__decorate([
-    common_1.Delete(':id'),
-    common_1.UseGuards(new auth_guard_1.AuthGuard()),
-    __param(0, common_1.Param('id')),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String]),
-    __metadata("design:returntype", Promise)
-], ProductsController.prototype, "removeProduct", null);
 ProductsController = __decorate([
     common_1.Controller('products'),
     __metadata("design:paramtypes", [products_service_1.ProductService])
