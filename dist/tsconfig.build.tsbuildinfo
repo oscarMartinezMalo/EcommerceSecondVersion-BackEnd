@@ -1422,7 +1422,7 @@
         "signature": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d"
       },
       "../src/guards/roles.guard.ts": {
-        "version": "0d787b4cb92a3de84d2cdab586c749caf8c6f5d780730a97fd36a1b9bb646c03",
+        "version": "6e4ecd00b7e1950eaa145439da93c7d12faec714e992d0810faaa33744294f12",
         "signature": "4b00274e38212237e868b812fce02b00a080b98aa99717c33600b6b50477d918"
       },
       "../src/products/products.controller.ts": {
@@ -8964,7 +8964,6 @@
       "../node_modules/@nestjs/core/services/reflector.service.d.ts",
       "../node_modules/@nestjs/core/services/index.d.ts",
       "../node_modules/@nestjs/core/index.d.ts",
-      "../src/guards/roles.guard.ts",
       "../src/products/products.controller.ts",
       "../src/products/product.module.ts",
       "../src/shopping-carts/cart.model.ts",

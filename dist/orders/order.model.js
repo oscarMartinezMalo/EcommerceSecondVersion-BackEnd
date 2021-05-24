@@ -27,6 +27,7 @@ exports.OrderSchema = new mongoose.Schema({
                 title: { type: String },
                 price: { type: Number },
                 imageUrl: { type: String },
+                imagesUrls: [{ type: String }]
             },
             quantity: { type: Number, default: 0 },
             totalPrice: { type: Number, default: 0 }
