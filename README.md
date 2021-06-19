@@ -17,3 +17,7 @@ Step to Push Image to dockerHub
 Step to run project locally
     docker build -t ecommercebackend . 
     docker run -d --rm -p 3000:3000 --name BackEndEcommerce ecommercebackend
+
+
+Step to run project locally from DockerHub
+    1.- docker run -d --rm -p 3000:3000 ommalor/ecommerce-backend
