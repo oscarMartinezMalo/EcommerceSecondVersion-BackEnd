@@ -8966,7 +8966,6 @@
       "../node_modules/@nestjs/core/index.d.ts",
       "../src/products/products.controller.ts",
       "../src/products/product.module.ts",
-      "../src/shopping-carts/cart.model.ts",
       "../src/shopping-carts/cart.service.ts",
       "../src/shopping-carts/cart.controller.ts",
       "../src/shopping-carts/cart.module.ts",
