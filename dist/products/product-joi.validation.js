@@ -12,7 +12,7 @@ exports.ProductValidationSchema = Joi.object({
         .min(3)
         .required(),
     imageUrl: Joi.string()
-        .min(6)
+        .min(3)
         .required()
 });
 //# sourceMappingURL=product-joi.validation.js.map
